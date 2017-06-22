@@ -1,0 +1,147 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK - Digital product catalogue
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Cross-government digital projects catalogue
+      </h1>
+        <!-- <span class="heading-secondary">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }} -->
+      <p>
+        This site aims to become a catalogue of as many GOV.UK services as possible, with the aim of reducing duplication of effort across government.
+      </p>
+    </div>
+  </div>
+      <!-- <h2 class="heading-medium">About this page</h2> -->
+  <div class="grid-row">
+    <div class="column-full">
+      <table class="check-your-answers product-catalogue">
+        <input type="search" class="filter-input"  placeholder="Search" />
+        <!-- <button class="icon"><i class="search-icon"></i></button> -->
+        <thead>
+          <tr>
+            <!-- <th colspan="12"> -->
+            <th>
+              <h3 class="heading-small">
+                Service name
+              </h3>
+            <th>
+              <h3 class="heading-small">
+                Owning organisation
+              </h3>
+            </th>
+            <th>
+              <h3 class="heading-small">Current phase</h3>
+            </th>
+            <th>
+              <h3 class="heading-small">Type</h3>
+            </th>
+            <th>
+              <h3 class="heading-small">Tags</h3>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              <p class="service-name"><a href="/detail.html">Tax self-assessment</a></p>
+            </td>
+            <td>
+              <p class="organisation">HM Revenue and Customs</p>
+            </td>
+            <td>
+              <p class="phase">Alpha</p>
+            </td>
+            <td>
+              <p class="type">Transactional service</p>
+            </td>
+            <td>
+              <ul class="tags-list">
+                <li class="tag" value="admin-interface">Admin interface</li>
+                <li class="tag" value="case-management">Case management</li>
+                <li class="tag" value="authentication">Authentication</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="service-name"><a href="/detail.html">Check and challenge your business rates valuation</a></p>
+            </td>
+            <td>
+              <p class="organisation">Valuation Office Agency</p>
+            </td>
+            <td>
+              <p class="phase">Public beta</p>
+            </td>
+            <td>
+              <p class="type">Transactional service</p>
+            </td>
+            <td>
+              <ul class="tags-list">
+                <li class="tag" value="admin-interface">Admin interface</li>
+                <li class="tag" value="case-management">Case management</li>
+                <li class="tag" value="authentication">Authentication</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="service-name"><a href="/detail.html">GOV.UK Notify</a></p>
+            </td>
+            <td>
+              <p class="organisation">Government Digital Service</p>
+            </td>
+            <td>
+              <p class="phase">Private beta</p>
+            </td>
+            <td>
+              <p class="type">Government as a Platform</p>
+            </td>
+            <td>
+              <ul class="tags-list">
+                <li class="tag" value="admin-interface">API</li>
+                <li class="tag" value="case-management">Email</li>
+                <li class="tag" value="authentication">SMS</li>
+                <li class="tag" value="authentication">Post</li>
+                <li class="tag" value="authentication">GaaP</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="service-name"><a href="/detail.html">Lasting Power of Attorney</a></p>
+            </td>
+            <td>
+              <p class="organisation">Office of the Public Guardian</p>
+            </td>
+            <td>
+              <p class="phase">Live</p>
+            </td>
+            <td>
+              <p class="type">Transactional service</p>
+            </td>
+            <td>
+              <ul class="tags-list">
+                <li class="tag" value="admin-interface">Admin interface</li>
+                <li class="tag" value="case-management">Case management</li>
+                <li class="tag" value="authentication">Authentication</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

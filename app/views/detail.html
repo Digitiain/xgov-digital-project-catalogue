@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  {{ digitalServiceName }}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+
+      <h1 class="heading-large">
+        {{ digitalServiceName }} Tax self-assessment
+      </h1>
+      <h3 class="heading-small">
+        What the service does:
+      </h3>
+      <p id="service-description">
+        {{ digitalServiceDescription }} Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+  <!-- <h2 class="heading-medium">About this page</h2> -->
+  <div class="grid-row">
+    <div class="column-full">
+      <table class="check-your-answers product-catalogue" style="margin-bottom:30px;">
+        <thead>
+          <tr>
+            <th>
+              <h3 class="heading-small">
+                    Owning organisation
+                  </h3>
+            </th>
+            <th>
+              <h3 class="heading-small">Current phase</h3>
+            </th>
+            <th>
+              <h3 class="heading-small">Type</h3>
+            </th>
+            <th>
+              <h3 class="heading-small">Tags</h3>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              <p class="organisation">{{ digitalServiceOrganisation }}HM Revenue and Customs</p>
+            </td>
+            <td>
+              <p class="phase">{{ digitalServicePhase }}Alpha</p>
+            </td>
+            <td>
+              <p class="type">{{ digitalServiceType }}Transactional service</p>
+            </td>
+            <td>
+              <ul class="tags-list">
+                <li class="tag" value="admin-interface">Admin interface</li>
+                <li class="tag" value="case-management">Case management</li>
+                <li class="tag" value="authentication">Authentication</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+  <div class="grid-row">
+    <div class="column-full">
+      <h3 class="heading-medium"><i class="fa fa-github fa-2x" aria-hidden="true"></i> Github repos</h3>
+      <ul>
+        <li>
+          <p><a href="#">https://www.github.com/</a></p>
+        </li>
+        <li>
+          <p><a href="#">https://www.github.com/</a></p>
+        </li>
+        <li>
+          <p><a href="#">https://www.github.com/</a></p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+        </li>
+        <li>
+          <p>Contact person</p>
+        </li>
+        <li>
+          <p>Link to assessment outcome</p>
+        </li>
+        <li>
+          <p>Link to service</p>
+        </li>
+        <li>
+          <p>Link to data platform</p>
+        </li>
+        <li>
+          <p>Link to blog</p>
+        </li>
+        <li>
+          <p></p>
+        </li>
+        <li>
+          <p></p>
+        </li>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
